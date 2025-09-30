@@ -11,7 +11,7 @@ jobs:
     uses: 33-Auto/.github/.github/workflows/reusable-pr-assign-and-review.yml@main
     with:
       # 여기에 리뷰를 요청할 팀의 slug를 입력합니다.
-      team-slug-for-review: 'Review_Avengers'
+      team-slug-for-review: 'review_avengers'
       pr-author: ${{ github.event.pull_request.user.login }}
       pr-number: ${{ github.event.pull_request.number }}
     secrets: inherit
