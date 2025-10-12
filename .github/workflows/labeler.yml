@@ -7,7 +7,5 @@ on:
 jobs:
   call-reusable-labeler:
     uses: 33-Auto/.github/.github/workflows/reusable-label-on-approve.yml@main
-    permissions:
-      pull-requests: write # 라벨 추가/삭제 권한
-      contents: read
-    secrets: inherit
+    secrets:
+      ORGANIZATION_TOKEN: ${{ secrets.ORGANIZATION_TOKEN }} # 재사용 워크플로우가 ORGANIZATION_TOKEN을 사용할 수 있도록 전달
