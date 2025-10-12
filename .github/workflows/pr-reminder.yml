@@ -10,4 +10,4 @@ jobs:
     uses: 33-Auto/.github/.github/workflows/reusable-pr-reminder.yml@main
     secrets:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # 각 레포에 설정된 시크릿 사용
-      inherit: true
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
