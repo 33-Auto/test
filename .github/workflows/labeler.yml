@@ -1,0 +1,13 @@
+name: Label on Approval Count
+
+on:
+  pull_request_review:
+    types: [submitted, dismissed]
+
+jobs:
+  call-reusable-labeler:
+    uses: 33Auto/.github/.github/workflows/reusable-label-on-approve.yml@main
+    permissions:
+      pull-requests: write # 라벨 추가/삭제 권한
+      contents: read
+    secrets: inherit
