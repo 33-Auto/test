@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.ORGANIZATION_TOKEN }}
           # [중요] 아래 repository 값은 모든 앱이 공유하는 '중앙 인프라 리포지토리' 주소로 미리 수정해야 한다.
-          repository: 33-Auto/my-central-infra-repo
+          repository: 33-Auto/Sampoom-Mangement-Infra
           event-type: deploy
           # 'test'은 스크립트가 동적으로 치환할 자리표시자(placeholder)이다.
           client-payload: '{"service":"test","branch":"main"}'
